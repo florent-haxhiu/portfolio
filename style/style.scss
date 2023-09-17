@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Nunito&display=swap");
+
+$header-font: "Alegreya Sans SC", sans-serif;
+$para-font: "Nunito", sans-serif;
+$primary: #EEF4D4;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: $header-font;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $primary;
+  .container {
+    display: inherit;
+    flex-direction: inherit;
+    gap: 1rem;
+
+    p {
+      font-family: $para-font;
+    }
+
+    .backend {
+      font-size: 24px;
+    }
+
+    .links {
+      align-self: flex-end;
+      .logo {
+        padding: 0 3px;
+        max-height: 36px;
+      }
+    }
+  }
+}
